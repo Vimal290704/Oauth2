@@ -1,10 +1,21 @@
-HELP.md
+# Java/Maven specific ignores
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.jar
+*.war
+*.ear
+.mvn/
+mvnw
+mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
 
-### STS ###
+# IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# Eclipse/STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +24,32 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Build directories
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+!src/main/**/build/
+!src/test/**/build/
+!src/main/**/target/
+!src/test/**/target/
 
-### VS Code ###
-.vscode/
+# Sensitive configuration files
+src/main/resources/application-local.properties
+src/main/resources/application-prod.properties
+src/main/resources/application-dev.properties
+
+# Keep template configuration
+!src/main/resources/application.properties
+
+# General
+.DS_Store
+.env
+*.log
+logs/
+temp/
+tmp/
