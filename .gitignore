@@ -1,55 +1,6 @@
-# Java/Maven specific ignores
-target/
-*.jar
-*.war
-*.ear
-.mvn/
-mvnw
-mvnw.cmd
-!.mvn/wrapper/maven-wrapper.jar
-
-# IDE files
-.idea/
-*.iws
-*.iml
-*.ipr
-.vscode/
-
-# Eclipse/STS
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-# NetBeans
-nbproject/private/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-# Build directories
-build/
-!src/main/**/build/
-!src/test/**/build/
-!src/main/**/target/
-!src/test/**/target/
-
-# Sensitive configuration files
-src/main/resources/application-local.properties
-src/main/resources/application-prod.properties
-src/main/resources/application-dev.properties
-
-# Keep template configuration
-!src/main/resources/application.properties
-
-# General
-.DS_Store
-.env
-*.log
-logs/
-temp/
-tmp/
+/.idea
+/.mvn
+/.gitattributes
+/HELP.md
+/mvnw.cmd
+/mvnw
