@@ -4,3 +4,7 @@
 /HELP.md
 /mvnw.cmd
 /mvnw
+
+/.vscode
+/demo.iml
+/src/main/resources/application.properties
